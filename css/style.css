@@ -1,0 +1,40 @@
+.form{
+  border:1px solid #eee;
+  border-radius:14px;
+  padding:16px;
+  max-width:640px;
+}
+
+.form-row{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-bottom:12px;
+}
+
+.form input,
+.form textarea{
+  border:1px solid #e6e6e6;
+  border-radius:12px;
+  padding:10px 12px;
+  font:inherit;
+}
+
+.form input:focus,
+.form textarea:focus{
+  outline:2px solid #111;
+  outline-offset:2px;
+}
+
+.form-actions{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.form-hint{
+  margin:0;
+  opacity:0.85;
+}
+
