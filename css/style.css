@@ -1,31 +1,26 @@
-/* Responsive - Issue #7 */
-@media (max-width: 720px) {
-  .container { padding: 18px 16px; }
-
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .nav { flex-wrap: wrap; }
-
-  .hero { padding: 28px 0 18px; }
-  .hero-title { font-size: 34px; }
-  .hero-subtitle { font-size: 16px; }
-
-  .grid { grid-template-columns: 1fr; }
-
-  .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .form { width: 100%; }
+/* Accessibilité */
+.skip-link{
+  position:absolute;
+  left:-9999px;
+  top:10px;
+  padding:10px 12px;
+  border-radius:12px;
+  background:#111;
+  color:#fff;
+  z-index:999;
 }
-@media (max-width: 420px) {
-  .hero-title { font-size: 30px; }
-  .btn { width: 100%; text-align: center; }
+.skip-link:focus{
+  left:12px;
 }
 
+.nav a[aria-current="page"]{
+  background:#f4f4f4;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible{
+  outline:2px solid #111;
+  outline-offset:2px;
+}
