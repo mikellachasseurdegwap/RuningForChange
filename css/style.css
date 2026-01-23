@@ -24,3 +24,8 @@
 
   .form { width: 100%; }
 }
+@media (max-width: 420px) {
+  .hero-title { font-size: 30px; }
+  .btn { width: 100%; text-align: center; }
+}
+
