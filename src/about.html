@@ -3,15 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RuningForChange</title>
+  <meta name="description" content="À propos de RuningForChange - Intégration front-end inspirée d'une maquette Figma." />
+  <title>À propos — RuningForChange</title>
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
 
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+
+<!-- HEADER NORMAL (pas overlay) -->
 <header class="site-header">
-  <a class="brand" href="./index.html" aria-label="Retour à l'accueil">
-    RuningForChange
+  <a class="brand" href="./index.html">
+    Running<br>For<br>Change
   </a>
 
   <nav class="nav" aria-label="Navigation principale">
@@ -21,49 +25,64 @@
 </header>
 
 <main class="container" id="main">
+
   <section class="section">
     <h1 class="section-title">À propos</h1>
+
     <p class="section-desc">
-      Cette page présente le projet et met en avant une mise en page structurée
-      avec des cards, inspirée de la maquette.
+      Ce projet est une intégration front-end inspirée d'une maquette Figma.
+      L'objectif est de produire une structure claire, responsive et accessible,
+      en respectant un workflow Git propre.
     </p>
 
     <div class="grid">
       <article class="card">
         <h3>Vision</h3>
-        <p>Mettre l’accent sur la lisibilité, la hiérarchie et la sobriété.</p>
+        <p>
+          Mettre l'accent sur la lisibilité, la hiérarchie visuelle
+          et la sobriété du design.
+        </p>
       </article>
 
       <article class="card">
         <h3>Méthode</h3>
-        <p>Travail par issues, branches feature, commits clairs et PR.</p>
+        <p>
+          Travail par issues, branches feature, commits clairs
+          et pull requests.
+        </p>
       </article>
 
       <article class="card">
-        <h3>Technos</h3>
-        <p>HTML, CSS, JavaScript. Pas de framework, focus sur l’essentiel.</p>
+        <h3>Technologies</h3>
+        <p>
+          HTML, CSS et JavaScript natif.
+          Aucun framework, focus sur les bases solides.
+        </p>
       </article>
 
       <article class="card">
         <h3>Qualité</h3>
-        <p>Structure propre, responsive et accessible.</p>
+        <p>
+          Code structuré, responsive, accessible
+          et maintenable dans le temps.
+        </p>
       </article>
     </div>
   </section>
+
 </main>
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>© 2026 — RuningForChange</p>
+    <p>&copy; 2026 — RuningForChange</p>
+
     <nav class="footer-nav" aria-label="Liens de pied de page">
-      <a href="./about.html">À propos</a>
       <a href="./index.html">Accueil</a>
+      <a href="./about.html">À propos</a>
     </nav>
   </div>
 </footer>
 
-  <script src="../js/main.js"></script>
-
+<script src="../js/main.js"></script>
 </body>
 </html>
-
