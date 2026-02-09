@@ -1,6 +1,4 @@
-/* =========================
-   CSS CUSTOM PROPERTIES
-========================= */
+
 :root {
   /* Couleurs */
   --color-bg: #fff;
@@ -42,9 +40,6 @@
   --container-width: 980px;
 }
 
-/* =========================
-   RESET & BASE
-========================= */
 *,
 *::before,
 *::after {
@@ -71,9 +66,7 @@ img {
   display: block;
 }
 
-/* =========================
-   ACCESSIBILITÉ
-========================= */
+
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -85,7 +78,7 @@ img {
   z-index: 999;
   text-decoration: none;
   font-weight: 500;
-  transition: background var(--transition-normal);
+  transition:  var(--transition-normal);
 }
 
 .skip-link:focus {
@@ -109,18 +102,14 @@ img {
   border: 0;
 }
 
-/* =========================
-   LAYOUT
-========================= */
+
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: var(--spacing-lg) var(--spacing-md);
 }
 
-/* =========================
-   HEADER
-========================= */
+
 .site-header {
   position: absolute;
   top: 0;
@@ -132,7 +121,7 @@ img {
   align-items: center;
   z-index: 10;
   background: transparent;
-  transition: background var(--transition-normal);
+  transition: var(--transition-normal);
 }
 
 .site-header--overlay .brand,
@@ -166,7 +155,7 @@ img {
   text-decoration: none;
   padding: 6px var(--spacing-sm);
   border-radius: var(--radius-sm);
-  transition: background var(--transition-normal), opacity var(--transition-normal);
+  transition:  var(--transition-normal), opacity var(--transition-normal);
 }
 
 .nav a:hover {
@@ -178,9 +167,7 @@ img {
   background: var(--color-bg-nav-active);
 }
 
-/* =========================
-   HERO
-========================= */
+
 .home .hero {
   position: relative;
   min-height: 100vh;
@@ -262,9 +249,37 @@ img {
   font-weight: 600;
 }
 
-/* =========================
-   BOUTONS
-========================= */
+/* HERO ABOUT */
+.about .hero-about{
+  position: relative;
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  background-image: url("../assets/images/running2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #e25d5d;
+}
+
+.about .hero-about::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.5);
+}
+
+.about .hero-about .hero-content{
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -277,7 +292,7 @@ img {
   font-weight: 500;
   border: none;
   cursor: pointer;
-  transition: background var(--transition-normal), transform var(--transition-normal), opacity var(--transition-normal);
+  transition: var(--transition-normal), transform var(--transition-normal), opacity var(--transition-normal);
   font-family: inherit;
   font-size: 1rem;
 }
@@ -309,7 +324,7 @@ img {
   font-weight: 600;
   text-decoration: none;
   display: inline-flex;
-  transition: background var(--transition-normal), transform var(--transition-normal), opacity var(--transition-normal);
+  transition: var(--transition-normal), transform var(--transition-normal), opacity var(--transition-normal);
 }
 
 .btn-register:hover {
@@ -322,9 +337,7 @@ img {
   transform: translateY(0);
 }
 
-/* =========================
-   SECTIONS
-========================= */
+
 .section {
   padding: 3.5rem 0;
 }
@@ -372,9 +385,7 @@ img {
   color: var(--color-text-muted);
 }
 
-/* =========================
-   FORMULAIRE
-========================= */
+
 .form {
   max-width: 480px;
   border: 1px solid var(--color-border);
@@ -434,9 +445,7 @@ img {
   color: #d00;
 }
 
-/* =========================
-   FOOTER
-========================= */
+
 .site-footer {
   border-top: 1px solid var(--color-border);
   padding: var(--spacing-md) var(--spacing-md);
@@ -474,9 +483,7 @@ img {
   color: var(--color-text);
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 @media (max-width: 768px) {
   .hero-content {
     padding-left: var(--spacing-lg);
@@ -539,10 +546,7 @@ img {
   }
 }
 
-/* =========================
-   ANIMATIONS
-========================= */
-@media (prefers-reduced-motion: no-preference) {
+
   .btn:hover {
     transform: translateY(-2px);
   }
@@ -556,9 +560,7 @@ img {
   }
 }
 
-/* =========================
-   DARK MODE SUPPORT
-========================= */
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #0a0a0a;

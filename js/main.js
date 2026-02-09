@@ -11,7 +11,7 @@ if (form && hint) {
       return;
     }
 
-    hint.textContent = "Merci ! Inscription enregistrée (simulation).";
+    hint.textContent = "Merci ! Inscription enregistrée.";
     form.reset();
   });
 }
