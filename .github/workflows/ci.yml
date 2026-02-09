@@ -1,0 +1,40 @@
+name: CI - RuningForChange
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+  pull_request:
+    branches:
+      - develop
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: |
+          if [ -f package.json ]; then
+            npm install
+          else
+            echo "No dependencies to install"
+          fi
+
+      - name: Basic project check
+        run: |
+          echo "Checking project structure"
+          ls
+          ls src
+          ls css
+          ls assets || true
